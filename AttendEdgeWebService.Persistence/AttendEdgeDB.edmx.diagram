@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fde246c25b7343f0a6fc6cd21330e191" Name="Diagram1" ZoomLevel="99">
+        <EntityTypeShape EntityType="AttendEdgeDBModel.AMC" Width="1.5" PointX="3" PointY="26.5" />
+        <EntityTypeShape EntityType="AttendEdgeDBModel.Attendance" Width="1.5" PointX="3" PointY="15" />
+        <EntityTypeShape EntityType="AttendEdgeDBModel.Company" Width="1.5" PointX="0.75" PointY="15.625" />
+        <EntityTypeShape EntityType="AttendEdgeDBModel.Contact" Width="1.5" PointX="3" PointY="8.875" />
+        <EntityTypeShape EntityType="AttendEdgeDBModel.Holiday" Width="1.5" PointX="3" PointY="31.75" />
+        <EntityTypeShape EntityType="AttendEdgeDBModel.LeaveRequest" Width="1.5" PointX="3" PointY="36.25" />
+        <EntityTypeShape EntityType="AttendEdgeDBModel.Role" Width="1.5" PointX="3.75" PointY="4.875" />
+        <EntityTypeShape EntityType="AttendEdgeDBModel.User" Width="1.5" PointX="6" PointY="16.125" />
+        <EntityTypeShape EntityType="AttendEdgeDBModel.UserDocument" Width="1.5" PointX="8.25" PointY="17" />
+        <AssociationConnector Association="AttendEdgeDBModel.FK_AMC_Company" />
+        <AssociationConnector Association="AttendEdgeDBModel.FK_Attendance_Company" />
+        <AssociationConnector Association="AttendEdgeDBModel.FK_Attendance_User" />
+        <AssociationConnector Association="AttendEdgeDBModel.FK_ContactUs_Company" />
+        <AssociationConnector Association="AttendEdgeDBModel.FK_Holiday_Company" />
+        <AssociationConnector Association="AttendEdgeDBModel.FK_LeaveRequest_Company" />
+        <AssociationConnector Association="AttendEdgeDBModel.FK_User_Company" />
+        <AssociationConnector Association="AttendEdgeDBModel.FK_User_Role" />
+        <AssociationConnector Association="AttendEdgeDBModel.FK_UserDocument_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,11 @@
+﻿using System;
+
+namespace AttendEdgeWebService.Infrastructure.CustomException
+{
+    [Serializable]
+    public class APIRequestFailedException : Exception
+    {
+        public APIRequestFailedException(string message)
+            : base(message) { }
+    }
+}
